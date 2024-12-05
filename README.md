@@ -1,2 +1,39 @@
-# ds785_capstone
-Codebase for master's program capstone course DS785
+# NBA Lineup Optimization Project - DS785 Capstone
+
+## Description
+
+This project focuses on revolutionizing NBA lineup strategy through the use of advanced plus-minus models and linear programming. By leveraging play-by-play data from NBA games spanning 1998 to 2023, the project aims to optimize lineup combinations to enhance team performance. The core of this project involves developing predictive plus-minus models and integrating them into a linear program to identify optimal lineup strategies for full 48-minute games.
+
+## Key Files
+
+- **pull_pbp_data_final**
+  - **Purpose**: Pulls raw NBA play-by-play data from 1996 to 2023.
+  - **Functionality**: For every play, identifies the 10 players on the court and records the action, forming the core dataset to power the calculation of plus-minus models for the linear program.
+
+- **import_lineups_final**
+  - **Purpose**: Prepares play-by-play data for analysis.
+  - **Functionality**: Reads the play-by-play data and performs data preparation to enable viewing at both the per-player level and the per-lineup level.
+
+- **game_mov_predictions**
+  - **Purpose**: Calculates various plus-minus model estimations.
+  - **Functionality**: Includes multiple versions of plus-minus models:
+    - v0: Baseline
+    - v1: Raw Plus-Minus
+    - v2: Player RAPM
+    - v3: Player B-RAPM
+    - v4: Player C-RAPM
+    - v5: Lineup RAPM
+    - v6: Lineup C-RAPM
+    - v7: Bayesian combination (incomplete)
+  - **Additional Features**: Contains code for generating plots used in the accompanying paper.
+
+- **lineup_optimizer_Final**
+  - **Purpose**: Integrates previous work to run the lineup optimizer.
+  - **Functionality**: 
+    - Reads data and retrieves lineups for all teams.
+    - Filters data to a specific team and season.
+    - Executes linear programs, including one that disregards lineup order and another performing sequential decision analysis, the project's major outcome.
+
+---
+
+This README provides an overview of the project's objectives and the key files that contribute to achieving those goals. Each file plays a crucial role in the data processing, model estimation, and optimization processes that form the foundation of this innovative approach to NBA lineup strategy.
