@@ -6,15 +6,15 @@ This project focuses on revolutionizing NBA lineup strategy through the use of a
 
 ## Key Files
 
-- **pull_pbp_data_final**
+- **pull_pbp_data.ipynb**
   - **Purpose**: Pulls raw NBA play-by-play data from 1996 to 2023.
   - **Functionality**: For every play, identifies the 10 players on the court and records the action, forming the core dataset to power the calculation of plus-minus models for the linear program.
 
-- **import_lineups_final**
+- **import_lineups**
   - **Purpose**: Prepares play-by-play data for analysis.
   - **Functionality**: Reads the play-by-play data and performs data preparation to enable viewing at both the per-player level and the per-lineup level.
 
-- **game_mov_predictions**
+- **game_mov_predictions.ipynb**
   - **Purpose**: Calculates various plus-minus model estimations.
   - **Functionality**: Includes multiple versions of plus-minus models:
     - v0: Baseline
@@ -27,7 +27,7 @@ This project focuses on revolutionizing NBA lineup strategy through the use of a
     - v7: Bayesian combination (incomplete)
   - **Additional Features**: Contains code for generating plots used in the accompanying paper.
 
-- **lineup_optimizer_season**
+- **lineup_optimizer_season.ipynb**
   - **Purpose**: Integrates previous work to run the lineup optimizer over the entire season.
   - **Functionality**: 
     - Reads data and retrieves lineups for all teams.
@@ -35,7 +35,7 @@ This project focuses on revolutionizing NBA lineup strategy through the use of a
     - Executes linear programs, including one that disregards lineup order and another performing sequential decision analysis, the project's major outcome.
     - Output optimal lineups for season long data
 
-- **lineup_optimizer_game**
+- **lineup_optimizer_game.ipynb**
   - **Purpose**: Integrates previous work to run the lineup optimizer for a specific game.
   - **Functionality**: 
     - Reads data and retrieves lineups for all teams.
