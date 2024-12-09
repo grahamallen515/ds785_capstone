@@ -10,7 +10,7 @@ This project focuses on revolutionizing NBA lineup strategy through the use of a
   - **Purpose**: Pulls raw NBA play-by-play data from 1996 to 2023.
   - **Functionality**: For every play, identifies the 10 players on the court and records the action, forming the core dataset to power the calculation of plus-minus models for the linear program.
 
-- **import_lineups**
+- **import_lineups.py**
   - **Purpose**: Prepares play-by-play data for analysis.
   - **Functionality**: Reads the play-by-play data and performs data preparation to enable viewing at both the per-player level and the per-lineup level.
 
