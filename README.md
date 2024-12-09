@@ -27,13 +27,21 @@ This project focuses on revolutionizing NBA lineup strategy through the use of a
     - v7: Bayesian combination (incomplete)
   - **Additional Features**: Contains code for generating plots used in the accompanying paper.
 
-- **lineup_optimizer_Final**
-  - **Purpose**: Integrates previous work to run the lineup optimizer.
+- **lineup_optimizer_season**
+  - **Purpose**: Integrates previous work to run the lineup optimizer over the entire season.
   - **Functionality**: 
     - Reads data and retrieves lineups for all teams.
     - Filters data to a specific team and season.
     - Executes linear programs, including one that disregards lineup order and another performing sequential decision analysis, the project's major outcome.
+    - Output optimal lineups for season long data
 
+- **lineup_optimizer_game**
+  - **Purpose**: Integrates previous work to run the lineup optimizer for a specific game.
+  - **Functionality**: 
+    - Reads data and retrieves lineups for all teams.
+    - Filters data to a specific team, season and game.
+    - Executes linear programs, including one that disregards lineup order and another performing sequential decision analysis, the project's major outcome.
+    - Output optimal lineups for specific game
 ---
 
 This README provides an overview of the project's objectives and the key files that contribute to achieving those goals. Each file plays a crucial role in the data processing, model estimation, and optimization processes that form the foundation of this innovative approach to NBA lineup strategy.
